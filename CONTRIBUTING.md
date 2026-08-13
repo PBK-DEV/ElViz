@@ -1,8 +1,6 @@
 # Contributing
 
-Contributions are welcome, and they are greatly appreciated! Every little bit helps, and credit will always be given.
-
-You can contribute in many ways:
+Contributions are welcome, but the project is still in it's infancy, as in their isn't any actual code yet!
 
 ## Types of Contributions
 
@@ -129,7 +127,7 @@ To run a subset of tests:
 uv run pytest tests/
 ```
 
-## Releasing a New Version
+<!---## Releasing a New Version
 
 1. **Bump the version:**
    ```bash
