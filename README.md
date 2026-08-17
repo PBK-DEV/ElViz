@@ -5,17 +5,15 @@
 
 E-CAD (electrical CAD) projects with python.
 
-* [GitHub](https://github.com/PBK-DEV/ElViz/) | [PyPI](https://pypi.org/project/ElViz/) | [Documentation](https://PBK-DEV.github.io/ElViz/)
-* Created by [Paul B. Kochta](https://elviz.kochta.eu) | GitHub [@PBK-DEV](https://github.com/PBK-DEV) | PyPI [@PaulBK](https://pypi.org/user/PaulBK/)
-* [EUROPEAN UNION PUBLIC LICENCE v. 1.2](https://eupl.eu/)
-
-## Working Principle
-
 Describe your devices with python classes and symbols in svg format or import them from the devices repository.
 Import and instantiate the device classes in the circuit definition file and connect them using the connection decorator.
 Create page definition files by importing and positioning the device instances from the circuit definition using the wire class to visualize connections. Use the CLI  to preview and render your pages. The border and title-block of the pages are defined in separate files and applied to the pages by the CLI or idevidualy by the page definitions. 
 
 Use inbuilt templates or simply create and empty project with definitions for common pages like tile, contents and terminal blocks to create your own. Use the simple copy mechanism provided py the the CLI or advanced tools like [cookiecutter](https://github.com/cookiecutter/cookiecutter) too apply templates to new projects. The resulting project is fully compatible with standard software version control like [git](https://git-scm.com/). 
+
+* [GitHub](https://github.com/PBK-DEV/ElViz/) | [PyPI](https://pypi.org/project/ElViz/) | [Documentation](https://PBK-DEV.github.io/ElViz/)
+* Created by [Paul B. Kochta](https://elviz.kochta.eu) | GitHub [@PBK-DEV](https://github.com/PBK-DEV) | PyPI [@PaulBK](https://pypi.org/user/PaulBK/)
+* [EUROPEAN UNION PUBLIC LICENCE v. 1.2](https://eupl.eu/)
 
 ## Features
 
