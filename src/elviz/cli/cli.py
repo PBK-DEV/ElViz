@@ -1,8 +1,5 @@
 """Console script for elviz."""
 
-from enum import Enum
-from pathlib import Path
-
 import typer
 from rich.console import Console
 
@@ -11,23 +8,21 @@ from .pages import app as pages
 from .project import app as project
 
 app = typer.Typer()
-app.add_typer(typer_instance=project, name="project")
-app.add_typer(typer_instance=circuit, name="circuit")
-app.add_typer(typer_instance=pages, name="pages")
+app.add_typer(typer_instance=project, name="project", help="Manage the project")
+app.add_typer(typer_instance=circuit, name="circuit", help="Manage the circuit")
+app.add_typer(typer_instance=pages, name="pages", help="Manage the pages")
 console = Console()
 
 
-class exportFormat(Enum):
-    """Enum of export formats"""
-
-    PDF = "pdf"
-    DXF = "dxf"
-    SVG = "svg"
+@app.command()
+def new() -> None:
+    """Init new project"""
+    ...
 
 
 @app.command()
-def export(format: exportFormat, path: Path) -> None:
-    """Export to PDF, DXF or SVG"""
+def list_templates() -> None:
+    """List available templates"""
     ...
 
 

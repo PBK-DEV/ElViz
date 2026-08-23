@@ -1,3 +1,5 @@
+import os
+
 import typer
 from rich.console import Console
 
@@ -6,7 +8,7 @@ console = Console()
 
 
 @app.command()
-def show() -> None:
+def view() -> None:
     """Show page"""
     ...
 
@@ -18,9 +20,18 @@ def add_external() -> None:
 
 
 @app.command()
+def lint() -> None:
+    """Lint the pages dir: rename the page files after their id and order them by adding numerals"""
+    ...
+
+
+@app.command()
 def list() -> None:
     """List all pages in the project"""
-    ...
+    path: str = os.path.join(os.getcwd(), "pages")
+    for x in os.listdir(path=path):
+        if x.endswith(".py"):
+            console.print(x)
 
 
 if __name__ == "__main__":
